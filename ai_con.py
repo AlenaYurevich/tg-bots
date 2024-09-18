@@ -1,7 +1,8 @@
 from openai import OpenAI
+from access import My_key
 
 client = OpenAI(
-    api_key="sk-eojihWMYuwlwO4oNjNMX8DbkkkBtLg7I",
+    api_key=My_key,
     base_url="https://api.proxyapi.ru/openai/v1",
 )
 
@@ -30,6 +31,7 @@ def chat_with_ai():
 
         # Добавляем ответ модели в список сообщений
         messages.append({"role": "assistant", "content": ai_response})
+        # messages.append({"role": "system", "content": "отвечай в стиле веселого клоуна"})
 
 
 if __name__ == "__main__":

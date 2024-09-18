@@ -1,8 +1,9 @@
 import telebot
 from telebot.apihelper import ApiTelegramException
+from access import My_token
 
 # Вставьте ваш токен, полученный от @BotFather
-API_TOKEN = '7526041600:AAG0KoBYbo2hkhnAiB2UFR6-td3JRPI7ZNs'
+API_TOKEN = My_token
 
 
 # Инициализация бота
